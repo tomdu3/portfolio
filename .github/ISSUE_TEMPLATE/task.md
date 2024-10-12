@@ -7,8 +7,6 @@ assignees: ''
 
 ---
 
-# Task: [Task Title]
-
 ## Description
 Describe the task in detail, specifying what needs to be done to support the related user story or epic.
 

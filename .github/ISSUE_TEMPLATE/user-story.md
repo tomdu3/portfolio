@@ -7,8 +7,6 @@ assignees: ''
 
 ---
 
-# User Story: [User Story Title]
-
 ## Description
 As a **[user type, e.g., visitor]**, I want to **[describe what the user wants to accomplish, e.g., see a list of projects with clear descriptions]**, so I can **[describe why the user wants to accomplish it, e.g., understand skills and experience]**.
 
