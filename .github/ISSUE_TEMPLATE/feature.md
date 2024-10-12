@@ -1,13 +1,11 @@
 ---
-name: Feature Template
+name: Feature
 about: Add, remove, or modify a template
-title: "[Feature]"
+title: 'Feature: [Feature Name]'
 labels: Feature
 assignees: ''
 
 ---
-
-**Title**: `Feature: [Feature Name]`
 
 **Description**:  
 Describe the feature and the purpose it serves within the portfolio.

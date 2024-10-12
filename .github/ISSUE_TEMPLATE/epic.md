@@ -1,13 +1,11 @@
 ---
-name: Epic Story
+name: Epic
 about: Epic Story details
 title: 'Epic: [Epic Title]'
 labels: ''
 assignees: ''
 
 ---
-
-# Epic: [Epic Title]
 
 ## Description
 This epic focuses on [describe the overall purpose of the epic, e.g., "creating a section where visitors can explore completed projects"]. This section will help showcase [desired outcome, e.g., "skills and experience through a collection of work"].
