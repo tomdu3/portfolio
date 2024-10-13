@@ -1,46 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tomislav Dukez Portfolio Page</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <script src="./assets/js/scripts.js"></script>
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
-</head>
-<body>
-
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest" />
+  </head>
+  <body>
     <header>
-        <a href="#" class="logo-container">
-            <div class="logo">TD</div>
-            <div class="logo-text">Portfolio</div>
+      <a href="#" class="logo-container">
+        <div class="logo">TD</div>
+        <div class="logo-text">Portfolio</div>
+      </a>
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Skills</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <a href="#" class="mobile-toggle" onclick="toggleMenu()">
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2"
+              d="M5 7h14M5 12h14M5 17h14"
+            />
+          </svg>
         </a>
-        <nav>
-            <ul id="menu">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Skills</a>
-                </li>
-                <li>
-                    <a href="#">Projects</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-            <a href="#" class="mobile-toggle" onclick="toggleMenu()">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
-                  </svg>
-                  
-            </a>
-        </nav>
+      </nav>
     </header>
-</body>
+        <main>
+            <section class="hero container">
+                <div class="hero-blue">
+                  <div>
+                    <h1><small>Hi I'm</small>
+                      Tomislav Dukez
+                    </h1>
+                    <p>
+                      Full Stack Software Developer and Data Analyst in London, who loves to build things, learn new things and help others. I'm always looking for new and exciting projects. I also love to teach others how to code.
+                      <span>Though I love playing with Frontend, I am a big fan of Backend. And I love coding in JavaScript and Python Backend Frameworks like FastAPI, Django, Flask, NodeJS, Express.
+                      As Data Analyst, I like to play with Jupyter Notebooks, Pandas, Matplotlib, Numpy, Seaborn, Scikit-learn, Tensorflow, Streamlit, Tableau and PowerBI.
+                      AI is my passion, and I love to build AI tools and applications.
+                      </span>
+                    </p>
+                    <div class="call-to-action">
+                      <a href="#" class="btn black">
+                        View Resume
+                      </a>
+                      <a href="#" class="btn white">
+                        Contact Me
+                      </a>
+                      <div class="social-links">
+                        <a href="#">
+                          <img src="./assets/img/github.png" alt="GitHub" width="48" />
+                        </a>
+                        <a href="#">
+                          <img src="./assets/img/linkedin.png" alt="LinkedIn" width="48" />
+                        </a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-yellow">
+                    <img src="./assets/img/myimgs/td-hello.svg" alt="Tomislav Dukez" width="100%">
+                </div>
+            </section>
+        </main>
+  </body>
 </html>
