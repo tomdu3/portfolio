@@ -1,35 +1,40 @@
 import OpenAI from "openai";
 import { NextResponse } from "next/server";
+import { promises as fs } from 'fs';
 
 const openAPIKey=process.env.OPENAI_API_KEY;
-// const completion = await openai.chat.completions.create({
-//     model: "gpt-4o",
-//     messages: [
-//         {"role": "user", "content": "write a haiku about ai"}
-//     ]
-// });
-
 export async function POST(req) {
-    const { messages } = await req.json();
-    const client = new OpenAI({openAPIKey});
+    try {
+        const { messages } = await req.json();
+        const client = new OpenAI({ apiKey: openAPIKey });
 
-    // const mesages = [
-    //     {
-    //         role: "system",
-    //         content: 'You are a helpful assistant.',
-    //     },
-    //     {
-    //         role: "user",
-    //         content: 'Which is the best: Javascript or Python?',
-    //     }
-    // ];
+        // Read the resume from the file system
+        const DATA_RESUME = await fs.readFile('public/docs/cv.txt', 'utf-8');
 
-    const response = await client.chat.completions.create({
-        model: "gpt-3.5-turbo",
-        messages: messages,
-    })
 
-    return NextResponse.json({
-        message: response.choices[0].message.content
-    });
+        // Setup proper System message and include the resume if needed
+        messages.unshift({
+            role: "system",
+            content: `
+            You are a helpful Portfolio GPT, answering only questions based on the resume provided.
+        Resume:
+        ${DATA_RESUME }
+        Help users learn more about Tomislav from his resume.
+            `
+        });
+
+        // Call OpenAI API
+        const response = await client.chat.completions.create({
+            model: "gpt-3.5-turbo",
+            messages: messages,
+            max_tokens: 128
+        });
+
+        return NextResponse.json({
+            message: response.choices[0].message.content
+        });
+    } catch (error) {
+        console.error("Error:", error);
+        return NextResponse.json({ error: "An error occurred" }, { status: 500 });
+    }
 }
