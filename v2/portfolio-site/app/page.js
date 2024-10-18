@@ -1,101 +1,271 @@
+'use client';
+import { useState } from 'react';
 import Image from "next/image";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [menuOpen, setMenuOpen] = useState(false);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <>
+     <header>
+      <a href="#" class="logo-container">
+        <div class="logo">TD</div>
+        <div class="logo-text">Portfolio</div>
+      </a>
+      <nav>
+        <ul id="menu" className={menuOpen ? "active" : ""}>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="mailto:tomdu3@ymail.com">Contact Me</a>
+          </li>
+        </ul>
+        <a href="#" class="mobile-toggle" onClick={toggleMenu}>
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
           >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2"
+              d="M5 7h14M5 12h14M5 17h14"
             />
-            Deploy now
+          </svg>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero container">
+        <div class="hero-blue">
+          <div>
+            <h1>
+              <small>Hi I'm</small>
+              Tomislav Dukez
+            </h1>
+            <p>
+              Full Stack Software Developer and Data Analyst in London, who
+              loves to build things, learn new things and help others. I'm
+              always looking for new and exciting projects. I also love to teach
+              others how to code.
+              <span
+                >Though I love playing with Frontend, I am a big fan of Backend.
+                And I love coding in JavaScript and Python Backend Frameworks
+                like FastAPI, Django, Flask, NodeJS, Express. As Data Analyst, I
+                like to play with Jupyter Notebooks, Pandas, Matplotlib, Numpy,
+                Seaborn, Scikit-learn, Tensorflow, Streamlit, Tableau and
+                PowerBI. AI is my passion, and I love to build AI tools and
+                applications.
+              </span>
+            </p>
+            <div class="call-to-action">
+              <a href="/docs/Tomislav-Dukez-CV.pdf" class="btn black"> View Resume </a>
+              <a href="mailto:tomdu3@ymail.com" class="btn white"> Contact Me </a>
+              <div class="social-links">
+                <a href="#">
+                  <img src="/img/github.png" alt="GitHub" width="48" />
+                </a>
+                <a href="#">
+                  <img
+                    src="/img/linkedin.png"
+                    alt="LinkedIn"
+                    width="48"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-yellow">
+          <img
+            src="/img/myimgs/td-hello.svg"
+            alt="Tomislav Dukez"
+            width="100%"
+          />
+        </div>
+      </section>
+      <section class="logos container">
+        <div class="marquee">
+          <div class="track">
+            <img src="/img/logos/python.png" alt="Python" />
+            <img src="/img/logos/fastapi.svg" alt="FastAPI" />
+            <img src="/img/logos/django.svg" alt="Django" />
+            <img src="/img/logos/flask.png" alt="Flask" />
+            <img src="/img/logos/html.png" alt="HTML" />
+            <img src="/img/logos/css.png" alt="CSS" />
+            <img src="/img/logos/javascript.png" alt="JavaScript" />
+            <img src="/img/logos/postgresql.png" alt="PostgreSQL" />
+            <img src="/img/logos/docker.svg" alt="Docker" />
+            <img src="/img/logos/tailwind.png" alt="Tailwind" />
+            <img src="/img/logos/bootstrap.svg" alt="Bootstrap" />
+            <img src="/img/logos/bash.png" alt="Bash" />
+            <img src="/img/logos/nodejs.svg" alt="NodeJS" />
+            <img src="/img/logos/express.png" alt="Express" />
+            <img src="/img/logos/matplotlib.png" alt="Matplotlib" />
+            <img src="/img/logos/scikit-learn.png" alt="Scikit-learn" />
+            <img src="/img/logos/tensorflow.png" alt="Tensorflow" />
+            <img src="/img/logos/streamlit.png" alt="Streamlit" />
+            {/* Doubling for the marquee infinitie loop */}
+            <img src="/img/logos/python.png" alt="Python" />
+            <img src="/img/logos/fastapi.svg" alt="FastAPI" />
+            <img src="/img/logos/django.svg" alt="Django" />
+            <img src="/img/logos/flask.png" alt="Flask" />
+            <img src="/img/logos/html.png" alt="HTML" />
+            <img src="/img/logos/css.png" alt="CSS" />
+            <img src="/img/logos/javascript.png" alt="JavaScript" />
+            <img src="/img/logos/postgresql.png" alt="PostgreSQL" />
+            <img src="/img/logos/docker.svg" alt="Docker" />
+            <img src="/img/logos/tailwind.png" alt="Tailwind" />
+            <img src="/img/logos/bootstrap.svg" alt="Bootstrap" />
+            <img src="/img/logos/bash.png" alt="Bash" />
+            <img src="/img/logos/nodejs.svg" alt="NodeJS" />
+            <img src="/img/logos/express.png" alt="Express" />
+            <img src="/img/logos/matplotlib.png" alt="Matplotlib" />
+            <img src="/img/logos/scikit-learn.png" alt="Scikit-learn" />
+            <img src="/img/logos/tensorflow.png" alt="Tensorflow" />
+            <img src="/img/logos/streamlit.png" alt="Streamlit" />
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills container">
+        <h2>
+          <small>About Me</small>
+          Skills
+        </h2>
+        <div class="holder-blue">
+          <div class="left-column">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>Tailwind</li>
+              <li>jQuery</li>
+              <li>React</li>
+            </ul>
+            <h3>Backend</h3>
+            <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>FastAPI</li>
+            <li>Django</li>
+            <li>Flask</li>
+            <li>Python</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+          </ul>
+          <h3>Data Analyst</h3>
+          <ul>
+            <li>Jupyter Notebooks</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+            <li>Numpy</li>
+            <li>Seaborn</li>
+            <li>Scikit-learn</li>
+            <li>Tensorflow</li>
+            <li>Streamlit</li>
+            <li>PowerBI</li>
+            <li>Tableau</li>
+          </ul>
+          </div>
+          <div class="right-column">
+            <h3>A bit about me</h3>
+            <p>
+              I am a Full Stack Software Developer and Data Analyst in London. I
+              love to teach others how to code and to collaborate on projects.
+              Though I love playing with Frontend, I am a big fan of Backend. I
+              code in JavaScript and Python Backend Frameworks like FastAPI,
+              Django, Flask, NodeJS, Express.
+            </p>
+            <p>
+              As Data Analyst, I like to play with Jupyter Notebooks, Pandas,
+              Matplotlib, Numpy, Seaborn, Scikit-learn, Tensorflow, Streamlit,
+              Tableau and PowerBI. AI is my passion, and I love to build AI
+              tools and applications.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="bento container">
+        <h2>
+          <small>My</small>
+          Projects
+        </h2>
+        <div className="bento-grid">
+          <a href="https://books-4-life-2d26bdf04dec.herokuapp.com/" className="bento-item">
+            <img src="/img/myimgs/portfolio1.png" alt="Portfolio 1" />
           </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+          <a href="https://tomdu3.github.io/smiley-memories" className="bento-item">
+            <img src="/img/myimgs/portfolio2.png" alt="Portfolio 2" />
+          </a>
+          <a href="https://millionaire-kindof.herokuapp.com/" className="bento-item">
+            <img src="/img/myimgs/portfolio3.png" alt="Portfolio 3" />
+          </a>
+          <a href="https://tomdu3.github.io/smiling-depression" className="bento-item">
+            <img src="/img/myimgs/portfolio4.png" alt="Portfolio 4" />
+          </a>
+          <a href="https://brain-tumor-detector-e5d30222dbc4.herokuapp.com/" className="bento-item">
+            <img src="/img/myimgs/portfolio5.png" alt="Portfolio 5" />
+          </a>
+          <a href="https://hungryhippo-tgrams.onrender.com/" className="bento-item">
+            <img src="/img/myimgs/portfolio6.png" alt="Portfolio 6" />
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+      <section className="chatbot container">
+        <h2>
+          <small>Talk to me</small>
+          Chatbot
+        </h2>
+        <div className="chatbot-blue">
+          <div className="chat-info">
+            <h3>Azure AI Chatbot</h3>
+            <p>I've built an Azure AI Chatbot for you with all my skills, work experience and my CV details. You can ask a question about me and receive better presentation of who I am and what I've done.</p>
+            <p>You can also download my CV/Resume here if you want to take a look at it. I am currently looking for new opportunities, some projects to collaborate on, or just to say hi. Please, feel free to get in touch.</p>
+            <a href="/docs/Tomislav-Dukez-CV.pdf" className="btn black">Download Resume</a>
+          </div>
+          <div className="chat-box">
+            <div className="scroll-area">
+              <ul id="chat-log">
+                <li>
+                  <span className="avatar bot">AI</span>
+                  <div className="message">
+                    Hi, I am an Tom's AI Personal Assistant. How may I help you?
+                  </div>
+                </li>
+                <li>
+                  <span className="avatar user">User</span>
+                  <div className="message">
+                    I have a question about your CV.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="chat-message">
+              <input type="text" placeholder="Hey Tomislav, what skills are you best at?" />
+              <button className="btn black">Send</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    </>
   );
 }
