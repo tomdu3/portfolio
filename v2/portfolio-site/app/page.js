@@ -18,20 +18,20 @@ export default function Home() {
     let newMessages = [...messages, { role: "user", content: messageInput }];
     setMessages(newMessages);
     setMessageInput("");
-    const apiMessage = await fetch(
-      '/api',
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          messages: newMessages
-        }),
-        }
-    ).then((response) => response.json())
-    setMessages([...newMessages, {role: "system", content: apiMessage.message}]);
-  }
+    const apiMessage = await fetch("/api", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        messages: newMessages,
+      }),
+    }).then((response) => response.json());
+    setMessages([
+      ...newMessages,
+      { role: "system", content: apiMessage.message },
+    ]);
+  };
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -80,7 +80,7 @@ export default function Home() {
         </nav>
       </header>
       <main>
-        <section className='hero container'>
+        <section className='container hero'>
           <div className='hero-blue'>
             <div>
               <h1>
@@ -130,7 +130,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className='logos container'>
+        <section className='container logos'>
           <div className='marquee'>
             <div className='track'>
               <img src='/img/logos/python.png' alt='Python' />
@@ -173,7 +173,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id='skills' className='skills container'>
+        <section id='skills' className='container skills'>
           <h2>
             <small>About Me</small>
             Skills
@@ -233,7 +233,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id='projects' className='bento container'>
+        <section id='projects' className='container bento'>
           <h2>
             <small>My</small>
             Projects
@@ -277,16 +277,16 @@ export default function Home() {
             </a>
           </div>
         </section>
-        <section className='chatbot container'>
+        <section className='container chatbot'>
           <h2>
             <small>Talk to me</small>
             Chatbot
           </h2>
           <div className='chatbot-blue'>
             <div className='chat-info'>
-              <h3>Azure AI Chatbot</h3>
+              <h3>AI Chatbot</h3>
               <p>
-                I've built an Azure AI Chatbot for you with all my skills, work
+                I've built an AI Chatbot for you with all my skills, work
                 experience and my CV details. You can ask a question about me
                 and receive better presentation of who I am and what I've done.
               </p>
@@ -305,7 +305,9 @@ export default function Home() {
                 <ul id='chat-log'>
                   {messages.map((message, index) => (
                     <li key={index} className={`${message.role}`}>
-                      <span className={'avatar'}>{message.role === 'user' ? 'You' : 'AI'}</span>
+                      <span className={"avatar"}>
+                        {message.role === "user" ? "You" : "AI"}
+                      </span>
                       <div className='message'>{message.content}</div>
                     </li>
                   ))}
@@ -328,7 +330,8 @@ export default function Home() {
                 <input
                   type='text'
                   placeholder='Hey Tomislav, what skills are you best at?'
-                  value={messageInput} onChange={(e) => setMessageInput(e.target.value)}
+                  value={messageInput}
+                  onChange={(e) => setMessageInput(e.target.value)}
                 />
                 <button className='btn black'>Send</button>
               </form>
