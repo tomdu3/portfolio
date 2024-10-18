@@ -1,8 +1,12 @@
 import OpenAI from "openai";
 import { NextResponse } from "next/server";
 import { promises as fs } from 'fs';
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const openAPIKey=process.env.OPENAI_API_KEY;
+
 export async function POST(req) {
     try {
         const { messages } = await req.json();
