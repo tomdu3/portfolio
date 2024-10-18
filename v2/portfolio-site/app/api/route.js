@@ -9,23 +9,24 @@ const openAPIKey=process.env.OPENAI_API_KEY;
 //     ]
 // });
 
-export async function GET() {
+export async function POST(req) {
+    const { messages } = await req.json();
     const client = new OpenAI({openAPIKey});
 
-    const mesages = [
-        {
-            role: "system",
-            content: 'You are a helpful assistant.',
-        },
-        {
-            role: "user",
-            content: 'Which is the best: Javascript or Python?',
-        }
-    ];
+    // const mesages = [
+    //     {
+    //         role: "system",
+    //         content: 'You are a helpful assistant.',
+    //     },
+    //     {
+    //         role: "user",
+    //         content: 'Which is the best: Javascript or Python?',
+    //     }
+    // ];
 
     const response = await client.chat.completions.create({
         model: "gpt-3.5-turbo",
-        messages: mesages,
+        messages: messages,
     })
 
     return NextResponse.json({
