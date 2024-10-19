@@ -88,18 +88,15 @@ export default function Home() {
                 Tomislav Dukez
               </h1>
               <p>
-                Full Stack Software Developer and Data Analyst in London, who
+                Full Stack Software Developer and Data Analyst, who
                 loves to build things, learn new things and help others. I'm
                 always looking for new and exciting projects. I also love to
                 teach others how to code.
                 <span>
                   Though I love playing with Frontend, I am a big fan of
                   Backend. And I love coding in JavaScript and Python Backend
-                  Frameworks like FastAPI, Django, Flask, NodeJS, Express. As
-                  Data Analyst, I like to play with Jupyter Notebooks, Pandas,
-                  Matplotlib, Numpy, Seaborn, Scikit-learn, Tensorflow,
-                  Streamlit, Tableau and PowerBI. AI is my passion, and I love
-                  to build AI tools and applications.
+                  Frameworks, and I like to play with Jupyter Notebooks.
+                  AI is my passion, and I enjoy building AI tools and applications.
                 </span>
               </p>
               <div className='call-to-action'>
@@ -112,10 +109,10 @@ export default function Home() {
                   Contact Me{" "}
                 </a>
                 <div className='social-links'>
-                  <a href='#'>
+                  <a href='https://github.com/tomdu3'>
                     <img src='/img/github.png' alt='GitHub' width='48' />
                   </a>
-                  <a href='#'>
+                  <a href='https://www.linkedin.com/in/tomislav-dukez/'>
                     <img src='/img/linkedin.png' alt='LinkedIn' width='48' />
                   </a>
                 </div>
@@ -287,12 +284,10 @@ export default function Home() {
               <h3>AI Chatbot</h3>
               <p>
                 I've built an AI Chatbot for you with all my skills, work
-                experience and my CV details. You can ask a question about me
-                and receive better presentation of who I am and what I've done.
+                experience and my CV details.
               </p>
               <p>
-                You can also download my CV/Resume here if you want to take a
-                look at it. I am currently looking for new opportunities, some
+                I am currently looking for new opportunities, some
                 projects to collaborate on, or just to say hi. Please, feel free
                 to get in touch.
               </p>
