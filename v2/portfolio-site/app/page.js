@@ -88,15 +88,9 @@ export default function Home() {
                 Tomislav Dukez
               </h1>
               <p>
-                Full Stack Software Developer and Data Analyst, who
-                loves to build things, learn new things and help others. I'm
-                always looking for new and exciting projects. I also love to
-                teach others how to code.
+                I am a Full Stack Software Developer and Data Analyst with a passion for creating, learning, and assisting others. I'm constantly seeking out new and exciting projects, and I take great joy in teaching coding skills to others.
                 <span>
-                   Though I love playing with Frontend, I am a big fan of
-                  Backend. And I love coding in JavaScript and Python Backend
-                  Frameworks, and I like to play with Jupyter Notebooks.
-                  AI is my passion, and I enjoy building AI tools and applications.
+                  While I enjoy working on frontend development, my true passion lies in backend development. I am skilled in JavaScript and Python backend frameworks and enjoy using Jupyter Notebooks for various projects. Artificial Intelligence is a particular interest of mine, and I thrive on building innovative AI tools and applications.
                 </span>
               </p>
               <div className='call-to-action'>
