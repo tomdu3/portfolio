@@ -90,8 +90,10 @@ export default function Home() {
               <p>
                 I am a Full Stack Software Developer and Data Analyst with a passion for creating, learning, and assisting others. 
                 <br />
+                I'm constantly seeking out new and exciting projects, and I take great joy in teaching coding skills to others.
+                <br />
                 <span>
-                I'm constantly seeking out new and exciting projects, and I take great joy in teaching coding skills to others. I am skilled in JavaScript and Python backend frameworks and enjoy using Jupyter Notebooks for various projects. Artificial Intelligence is a particular interest of mine, and I thrive on building innovative AI tools and applications.
+                I am skilled in JavaScript and Python backend frameworks and enjoy using Jupyter Notebooks for various projects.  Artificial Intelligence is a particular interest of mine.
                 </span>
               </p>
               <div className='call-to-action'>
@@ -116,7 +118,7 @@ export default function Home() {
           </div>
           <div className='hero-yellow'>
             <img
-              src='/img/myimgs/td-hello.svg'
+              src='/img/myimgs/tdcode-hello.png'
               alt='Tomislav Dukez'
               width='100%'
             />
