@@ -93,7 +93,7 @@ export default function Home() {
                 always looking for new and exciting projects. I also love to
                 teach others how to code.
                 <span>
-                  Though I love playing with Frontend, I am a big fan of
+                   Though I love playing with Frontend, I am a big fan of
                   Backend. And I love coding in JavaScript and Python Backend
                   Frameworks, and I like to play with Jupyter Notebooks.
                   AI is my passion, and I enjoy building AI tools and applications.
