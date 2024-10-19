@@ -194,12 +194,21 @@ h1 {
   margin-bottom: 10px;
   small {
     display: block;
-    /* font-size: 24px; */
+    font-size: 40px;
     font-weight: 100;
   }
-
+  big {
+    font-size: 56px;
+    font-weight: 100;
+  }
   @media (max-width: 1024px) {
     font-size: 48px;
+    small {
+      font-size: 30px;
+    }
+    big {
+      font-size: 38px;
+    }
   }
 }
 .hero {

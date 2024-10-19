@@ -85,12 +85,13 @@ export default function Home() {
             <div>
               <h1>
                 <small>Hi I'm</small>
-                Tomislav Dukez
+                <big>Tomislav Dukez</big>
               </h1>
               <p>
-                I am a Full Stack Software Developer and Data Analyst with a passion for creating, learning, and assisting others. I'm constantly seeking out new and exciting projects, and I take great joy in teaching coding skills to others.
+                I am a Full Stack Software Developer and Data Analyst with a passion for creating, learning, and assisting others. 
+                <br />
                 <span>
-                  While I enjoy working on frontend development, my true passion lies in backend development. I am skilled in JavaScript and Python backend frameworks and enjoy using Jupyter Notebooks for various projects. Artificial Intelligence is a particular interest of mine, and I thrive on building innovative AI tools and applications.
+                I'm constantly seeking out new and exciting projects, and I take great joy in teaching coding skills to others. I am skilled in JavaScript and Python backend frameworks and enjoy using Jupyter Notebooks for various projects. Artificial Intelligence is a particular interest of mine, and I thrive on building innovative AI tools and applications.
                 </span>
               </p>
               <div className='call-to-action'>
