@@ -105,8 +105,6 @@ header {
   }
 
   .logo-container {
-    display: flex;
-    align-items: center;
     padding: 10px;
     font-weight: 600;
     color: var(--base-800);
@@ -201,6 +199,11 @@ header {
       }
     }
   }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
 .container {
