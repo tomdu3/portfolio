@@ -154,7 +154,116 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Other sections remain the same */}
+                {/* Logos Marquee Section */}
+                <section className='container logos'>
+          <div className='marquee'>
+            <div className='track'>
+              {/* Loop logos for marquee effect */}
+              <img src='/img/logos/python.png' alt='Python' />
+              <img src='/img/logos/fastapi.svg' alt='FastAPI' />
+              <img src='/img/logos/django.svg' alt='Django' />
+              <img src='/img/logos/flask.png' alt='Flask' />
+              <img src='/img/logos/html.png' alt='HTML' />
+              <img src='/img/logos/css.png' alt='CSS' />
+              <img src='/img/logos/javascript.png' alt='JavaScript' />
+              <img src='/img/logos/postgresql.png' alt='PostgreSQL' />
+              <img src='/img/logos/docker.svg' alt='Docker' />
+              <img src='/img/logos/tailwind.png' alt='Tailwind' />
+              <img src='/img/logos/bootstrap.svg' alt='Bootstrap' />
+              <img src='/img/logos/bash.png' alt='Bash' />
+              <img src='/img/logos/nodejs.svg' alt='NodeJS' />
+              <img src='/img/logos/express.png' alt='Express' />
+              <img src='/img/logos/matplotlib.png' alt='Matplotlib' />
+              <img src='/img/logos/scikit-learn.png' alt='Scikit-learn' />
+              <img src='/img/logos/tensorflow.png' alt='Tensorflow' />
+              <img src='/img/logos/streamlit.png' alt='Streamlit' />
+              {/* Doubling logos for infinite marquee effect */}
+            </div>
+          </div>
+        </section>
+
+        {/* Skills Section */}
+        <section id='skills' className='container skills'>
+          <h2>
+            <small>About Me</small>
+            Skills
+          </h2>
+          <div className='holder-blue'>
+            <div className='left-column'>
+              <h3>Frontend</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>Tailwind</li>
+                <li>jQuery</li>
+                <li>React</li>
+              </ul>
+              <h3>Backend</h3>
+              <ul>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>FastAPI</li>
+                <li>Django</li>
+                <li>Flask</li>
+                <li>Python</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+              </ul>
+              <h3>Data Analyst</h3>
+              <ul>
+                <li>Jupyter Notebooks</li>
+                <li>Pandas</li>
+                <li>Matplotlib</li>
+                <li>Numpy</li>
+                <li>Seaborn</li>
+                <li>Scikit-learn</li>
+                <li>Tensorflow</li>
+                <li>Streamlit</li>
+                <li>PowerBI</li>
+                <li>Tableau</li>
+              </ul>
+            </div>
+            <div className='right-column'>
+              <h3>A bit about me</h3>
+              <p>
+                I am a Full Stack Software Developer and Data Analyst in London. I love to teach others how to code and to collaborate on projects. Though I love playing with Frontend, I am a big fan of Backend. I code in JavaScript and Python Backend Frameworks like FastAPI, Django, Flask, NodeJS, Express.
+              </p>
+              <p>
+                As a Data Analyst, I like to play with Jupyter Notebooks, Pandas, Matplotlib, Numpy, Seaborn, Scikit-learn, Tensorflow, Streamlit, Tableau, and PowerBI. AI is my passion, and I love to build AI tools and applications.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Projects Section */}
+        <section id='projects' className='container bento'>
+          <h2>
+            <small>My</small>
+            Projects
+          </h2>
+          <div className='bento-grid'>
+            <a href='https://books-4-life-2d26bdf04dec.herokuapp.com/' className='bento-item'>
+              <img src='/img/myimgs/portfolio1.png' alt='Portfolio 1' />
+            </a>
+            <a href='https://tomdu3.github.io/smiley-memories' className='bento-item'>
+              <img src='/img/myimgs/portfolio2.png' alt='Portfolio 2' />
+            </a>
+            <a href='https://millionaire-kindof.herokuapp.com/' className='bento-item'>
+              <img src='/img/myimgs/portfolio3.png' alt='Portfolio 3' />
+            </a>
+            <a href='https://tomdu3.github.io/smiling-depression' className='bento-item'>
+              <img src='/img/myimgs/portfolio4.png' alt='Portfolio 4' />
+            </a>
+            <a href='https://brain-tumor-detector-e5d30222dbc4.herokuapp.com/' className='bento-item'>
+              <img src='/img/myimgs/portfolio5.png' alt='Portfolio 5' />
+            </a>
+            <a href='https://hungryhippo-tgrams.onrender.com/' className='bento-item'>
+              <img src='/img/myimgs/portfolio6.png' alt='Portfolio 6' />
+            </a>
+          </div>
+        </section>
         
         {/* Chatbot Section */}
         <section className='container chatbot'>

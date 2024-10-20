@@ -600,13 +600,13 @@ h3 {
           padding: 15px;
           border: 1px solid transparent;
           background-color: var(--base-100);
+          color: var(--chat-text-color);
           &:hover {
             outline: none;
             background-color: var(--white);
             border: 1px solid var(--base-100);
           }
           &:focus {
-            color: var(--chat-text-color);
             outline: none;
             background-color: var(--white);
             border: 1px solid var(--base-100);
