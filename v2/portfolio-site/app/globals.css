@@ -104,19 +104,6 @@ header {
     }
   }
 
-  #dark-mode-toggle {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    color: var(--black);
-    @media (max-width: 768px) {
-      width: 32px;
-      height: 32px;
-      padding: 5px;
-    }
-  }
-
   .logo-container {
     display: flex;
     align-items: center;
@@ -139,6 +126,19 @@ header {
 
     .logo-text {
       flex: 1;
+    }
+  }
+
+  #dark-mode-toggle {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    color: var(--black);
+    @media (max-width: 768px) {
+      width: 32px;
+      height: 32px;
+      padding: 5px;
     }
   }
 
