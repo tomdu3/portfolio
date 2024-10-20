@@ -1,18 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+/* Light Mode Variables */
 :root {
-  /* fonts */
   --default-font-family: "DM Sans", sans-serif;
   --heading-font-family: "DM Serif Display", serif;
-  /* colors */
+  
+  /* Light mode colors */
   --base: #555;
   --base-100: #f1f1f1;
   --base-400: #555;
@@ -25,6 +18,36 @@
   --blue-100: #e2f8ff;
   --blue-400: #61dafb;
   --blue-800: #0a61ae;
+  --white: white;
+  --black: black;
+  --chat-text-color: var(--black);
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+  --base: #cccccc;
+  --base-100: #1a1a1a;
+  --base-400: #aaaaaa;
+  --base-800: #f1f1f1;
+  --yellow: #ffd54f;
+  --yellow-100: #2b2b2b;
+  --yellow-400: #ffd54f;
+  --yellow-800: #ffda4b;
+  --blue: #5a9ad6;
+  --blue-100: #1e3a5f;
+  --blue-400: #5a9ad6;
+  --blue-800: #ffffff;
+  --white: #1a1a1a;
+  --black: #f1f1f1;
+  --chat-text-color: var(--black);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -32,6 +55,8 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 20px;
+  background-color: var(--base-100); /* Background based on theme */
+  color: var(--base-800); /* Text color based on theme */
 }
 
 h1,
@@ -46,7 +71,7 @@ h6 {
 a {
   text-decoration: none;
   color: var(--blue);
-
+  
   &:hover {
     text-decoration: underline;
   }
@@ -57,9 +82,40 @@ header {
   padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center; /* This will vertically center items inside the header */
   max-width: 1440px;
   margin: auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  
+  .toggle-dark-mode {
+    display: flex; /* Ensure flexbox properties apply */
+    align-items: center; /* Vertically centers the content inside */
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: 1px dotted black; 
+    @media (max-width: 768px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  #dark-mode-toggle {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    color: var(--black);
+    @media (max-width: 768px) {
+      width: 32px;
+      height: 32px;
+      padding: 5px;
+    }
+  }
 
   .logo-container {
     display: flex;
@@ -119,10 +175,12 @@ header {
       }
     }
   }
+  
   @media (max-width: 1024px) {
     flex-direction: column;
     align-items: center;
   }
+  
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -171,16 +229,16 @@ header {
     text-decoration: none;
   }
   &.white {
-    background-color: white;
+    background-color: var(--white);
     color: var(--base-800);
     &:hover {
       background-color: var(--blue);
-      color: white;
+      color: var(--white);
     }
   }
   &.black {
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
     &:hover {
       background-color: var(--base-400);
       color: var(--base-100);
@@ -211,6 +269,7 @@ h1 {
     }
   }
 }
+
 .hero {
   display: flex;
   @media (max-width: 1024px) {
@@ -310,7 +369,6 @@ h1 {
   }
 }
 
-/* Skills */
 h2 {
   font-size: 64px;
   line-height: 1;
@@ -361,7 +419,6 @@ h3 {
           padding: 10px 20px;
           margin-bottom: 10px;
           border-radius: 15px;
-          margin-bottom: 10px;
         }
       }
     }
@@ -373,8 +430,6 @@ h3 {
     }
   }
 }
-
-/* Projects */
 
 .bento {
   .bento-grid {
@@ -468,8 +523,6 @@ h3 {
   }
 }
 
-/* Chatbot */
-
 .chatbot {
   .chatbot-blue {
     background-color: var(--blue-100);
@@ -490,7 +543,7 @@ h3 {
 
     .chat-box {
       flex: 4;
-      background-color: white;
+      background-color: var(--white);
       border-radius: 15px;
       padding: 30px;
       display: flex;
@@ -549,26 +602,21 @@ h3 {
           background-color: var(--base-100);
           &:hover {
             outline: none;
-            background-color: white;
+            background-color: var(--white);
             border: 1px solid var(--base-100);
           }
           &:focus {
+            color: var(--chat-text-color);
             outline: none;
-            background-color: white;
+            background-color: var(--white);
             border: 1px solid var(--base-100);
           }
-
         }
         button {
           border: none;
           cursor: pointer;
         }
-        
       }
     }
   }
 }
-
-.call-to-action {
-}
-
