@@ -21,10 +21,9 @@ export default function Home() {
       setIsDarkMode(JSON.parse(savedMode));
       document.body.classList.toggle("dark-mode", JSON.parse(savedMode));
     } else {
-      // Fallback to system preference if no saved preference
-      const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setIsDarkMode(prefersDarkScheme);
-      document.body.classList.toggle("dark-mode", prefersDarkScheme);
+      // No saved preference, explicitly set light mode as default
+    setIsDarkMode(false); // Default to light mode
+    document.body.classList.remove("dark-mode"); // Ensure dark-mode class is removed
     }
   }, []);
 
@@ -178,6 +177,24 @@ export default function Home() {
               <img src='/img/logos/tensorflow.png' alt='Tensorflow' />
               <img src='/img/logos/streamlit.png' alt='Streamlit' />
               {/* Doubling logos for infinite marquee effect */}
+              <img src='/img/logos/python.png' alt='Python' />
+              <img src='/img/logos/fastapi.svg' alt='FastAPI' />
+              <img src='/img/logos/django.svg' alt='Django' />
+              <img src='/img/logos/flask.png' alt='Flask' />
+              <img src='/img/logos/html.png' alt='HTML' />
+              <img src='/img/logos/css.png' alt='CSS' />
+              <img src='/img/logos/javascript.png' alt='JavaScript' />
+              <img src='/img/logos/postgresql.png' alt='PostgreSQL' />
+              <img src='/img/logos/docker.svg' alt='Docker' />
+              <img src='/img/logos/tailwind.png' alt='Tailwind' />
+              <img src='/img/logos/bootstrap.svg' alt='Bootstrap' />
+              <img src='/img/logos/bash.png' alt='Bash' />
+              <img src='/img/logos/nodejs.svg' alt='NodeJS' />
+              <img src='/img/logos/express.png' alt='Express' />
+              <img src='/img/logos/matplotlib.png' alt='Matplotlib' />
+              <img src='/img/logos/scikit-learn.png' alt='Scikit-learn' />
+              <img src='/img/logos/tensorflow.png' alt='Tensorflow' />
+              <img src='/img/logos/streamlit.png' alt='Streamlit' />
             </div>
           </div>
         </section>
