@@ -1,4 +1,5 @@
 "use client";
+import ReactMarkdown from 'react-markdown';
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -306,7 +307,9 @@ export default function Home() {
                       <span className={"avatar"}>
                         {message.role === "user" ? "You" : "AI"}
                       </span>
-                      <div className='message'>{message.content}</div>
+                      <div className='message'>
+                        <ReactMarkdown>{message.content}</ReactMarkdown>
+                      </div>
                     </li>
                   ))}
                 </ul>
