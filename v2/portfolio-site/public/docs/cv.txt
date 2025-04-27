@@ -42,27 +42,27 @@ Freelance | 2023 - Present
 
 Projects
 --------
-- Hungry Hippo – A full-stack web app simulating a food delivery service.
-  Technologies Used: JavaScript, TypeScript, React, Tailwind, NodeJS, Express.js, PostgreSQL
+1. Hungry Hippo – A full-stack web app simulating a food delivery service. Group project.
+  Tech: JS, TypeScript, React, Tailwind, NodeJS, Express.js, PostgreSQL
   GitHub: https://github.com/chingu-voyages/v50-tier3-team-21
 
-- Books for Life – A platform for book lovers to share their favorite books.
-  Technologies Used: Python, HTML, CSS, JavaScript, Django, Bootstrap, PostgreSQL
+2. Books for Life – A platform for book lovers to share their favorite books.
+  Tech: Python, HTML, CSS, JavaScript, Django, Bootstrap, PostgreSQL
   GitHub: https://github.com/tomdu3/books-for-life
 
-- Brain Tumor Detector – A Streamlit dashboard for MRI-based brain tumor diagnosis.
-  Technologies Used: Python, NumPy, Matplotlib, Seaborn, Plotly, TensorFlow, Scikit-Learn, Streamlit
+3. Brain Tumor Detector – A Streamlit dashboard for MRI-based brain tumor diagnosis.
+  Tech: Python, NumPy, Matplotlib, Seaborn, Plotly, TensorFlow, Scikit-Learn, Streamlit
   GitHub: https://github.com/tomdu3/brain-tumor-detector
 
-- Out and About – A site sharing LGBTQ+ historical events with an interactive globe.
-  Technologies Used: Python, Flask, PostgreSQL, HTML, CSS, TailwindCSS, JavaScript
+4. Out and About – A site sharing LGBTQ+ historical events with an interactive globe.
+  Tech: Python, Flask, PostgreSQL, HTML, CSS, TailwindCSS, JS
   GitHub: https://github.com/vanderpatrick/Hackteam-6
 
-- Who Wants To Be a Millionaire Kind Of – A Python command-line trivia game.
+5. Who Wants To Be a Millionaire Kind Of – A Python command-line trivia game.
   GitHub: https://github.com/tomdu3/millionaire-kindof
 
-- Smiley’s Memories – A responsive, interactive front-end site for a memory game.
-  Technologies Used: HTML5, CSS3, Vanilla JavaScript
+6. Smiley’s Memories – A responsive, interactive front-end site for a memory game.
+  Technologies Used: HTML5, CSS3, JS
   GitHub: https://github.com/tomdu3/smiley-memories
 
 Education and Certifications

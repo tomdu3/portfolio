@@ -41,9 +41,9 @@ export async function POST(req) {
 
         // Call OpenRouter API (using DeepSeek model)
         const response = await openai.chat.completions.create({
-            model: "deepseek/deepseek-chat", // or "deepseek/deepseek-r1"
+            model: "deepseek/deepseek-r1", // or "deepseek/deepseek-chat"
             messages: messages,
-            max_tokens: 128
+            max_tokens: 3000
         });
 
         return NextResponse.json({
