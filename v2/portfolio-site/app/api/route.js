@@ -2,6 +2,8 @@ import OpenAI from "openai";
 import { NextResponse } from "next/server";
 import { promises as fs } from 'fs';
 import dotenv from "dotenv";
+import { formatResponseText } from '../utils/formatText';
+
 
 dotenv.config();
 
@@ -45,8 +47,9 @@ export async function POST(req) {
         });
 
         return NextResponse.json({
-            message: response.choices[0].message.content
-        });
+            message: response.choices[0].message.content,
+            formatted: formatResponseText(response.choices[0].message.content)
+          });
     } catch (error) {
         console.error("Error:", error);
         return NextResponse.json({ 
