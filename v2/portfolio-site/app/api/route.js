@@ -25,8 +25,10 @@ export async function POST(req) {
     });
 
     // Read the resume from the file system
-    const DATA_RESUME = await fs.readFile("/docs/cv.txt", "utf-8");
-
+    const DATA_RESUME = await fs.readFile(
+      path.join(process.cwd(), "public", "docs", "cv.txt"),
+      "utf-8",
+    );
     // Setup system message with resume
     messages.unshift({
       role: "system",
@@ -60,4 +62,3 @@ export async function POST(req) {
     );
   }
 }
-
