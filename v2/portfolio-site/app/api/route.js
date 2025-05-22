@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { promises as fs } from "fs";
 import dotenv from "dotenv";
 import { formatResponseText } from "../utils/formatText";
+import path from "path";
 
 dotenv.config();
 
