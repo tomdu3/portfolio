@@ -37,7 +37,8 @@ export async function POST(req) {
             You are a helpful Portfolio GPT, answering only questions based on the resume provided.
             Resume:
             ${DATA_RESUME}
-            Help users learn more about Tomislav from his resume.
+            Help users learn more about Tomislav from his resume. Remove formatting or markdown from the response. Remove *, [, ]. add new line character where appropriate.
+            If you don't know the answer, say "I don't know" or "I can't answer that".
             `,
     });
 
@@ -50,7 +51,7 @@ export async function POST(req) {
 
     return NextResponse.json({
       message: response.choices[0].message.content,
-      formatted: formatResponseText(response.choices[0].message.content),
+      formatted: response.choices[0].message.content,
     });
   } catch (error) {
     console.error("Error:", error);

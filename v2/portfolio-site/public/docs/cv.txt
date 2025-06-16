@@ -1,126 +1,67 @@
+
 Tomislav Dukez
-Full Stack Software Developer
-Zahna-Elster, Germany
-+49-1515-613-327 | tomdu3@ymail.com | https://www.linkedin.com/in/tomislav-dukez | https://github.com/tomdu3
+Full Stack Developer – Django, Flask, FastAPI, Python, JavaScript, Node.js, Express.js, React, ML with Python, Tableau
+LinkedIn: https://www.linkedin.com/in/tomislav-dukez
+GitHub: https://github.com/tomdu3
+Website: https://tomdu3.co.uk
+Email: tomdu3@ymail.com
+London, United Kingdom
 
-Summary
---------
-I am a Full-stack Software Developer with a specialization in Predictive Analytics from the Code Institute, Dublin.
-I am proficient in HTML, CSS, JavaScript, Python, Front End and Back End (Django, Flask, SQL), and a long-time Linux user.
-I have experience as a Lecturer at a University, a diplomat, and as an officer-in-charge in Public Administration.
-I possess strong communication skills and effective problem-solving abilities, with a particular passion for Back End development and coding tutoring.
-I am also interested in Data Analysis and Database Management.
+Summary:
+I am a Full-stack Software Developer specializing in Predictive Analytics from the Code Institute, Dublin.
 
-Technologies and Languages
---------------------------
-- Languages: HTML, CSS, JavaScript, Python, TypeScript, C, SQL
-- Technologies: Linux, Bootstrap, Tailwind, NodeJS, ExpressJS, Flask, Django
-- Automated Testing: Unittest, Jest (Python, JavaScript)
-- Databases: SQLite3, PostgreSQL
-- Libraries/Frameworks: jQuery, React, Pandas, Matplotlib, Seaborn, Plotly, Scikit-Learn, TensorFlow, Streamlit, Jupyter Notebook, Tableau, Excel, Git, GitHub
-- Other: Heroku, Data Structures and Algorithms, Agile Development, UI/UX Design, Software Project Management
+Technologies and Languages:
+Languages: HTML, CSS, JavaScript, Python, TypeScript, C, SQL
+Technologies: NodeJS, ExpressJS, Flask, Django, Bootstrap, Tailwind, SQLite3, PostgreSQL, MongoDB, jQuery, React, Redux 
+Data Science and ML: NumPy, Pandas, Matplotlib, TensorFlow, Streamlit, Tableau
+Tools: Heroku, Docker, Git, GitHub
+Skilled in Agile Development, UI/UX Design, and Software Project Management.
 
-Work Experience
----------------
-Project Owner - Backend Lead
-Chingu Voyage 50 | July – August 2024
-- Led the backend development of Hungry Hippo, a full-stack food delivery web application.
-- Utilized Node.js, Express, and PostgreSQL to design and implement robust APIs for order management and tracking.
-- Collaborated with frontend developers using React, Tailwind, and TypeScript to ensure optimal user experience.
-- Managed project timelines and deliverables in an agile environment.
+Experience:
+1. Chingu - Voyage 50 (July – August 2024)
+   Project Owner - Backend Lead
+   - Backend lead for Hungry Hippo, a full-stack delivery app
+     Code: https://github.com/tomdu3/hungry-hippo
+     View Site: https://hungryhippo-tgrams.onrender.com/
+   - Designed Node.js APIs with PostgreSQL and collaborated with React/TypeScript frontend developers.
 
-Data Analyst Associate
-London School of Informatics | April – June 2024
-- Led research and analysis to assist ERP companies in staying competitive.
-- Compiled data using Excel for data visualization, delivering meaningful insights to improve organizational processes.
-- Participated in in-house workshops to enhance industry knowledge.
+2. London School of Informatics (April – June 2024)
+   Data Analyst Associate
+   - Team Leader for machine learning tasks and visualizations in Python, TensorFlow, Tableau.
 
-Junior Full-Stack Engineer / Coding Tutor
-Freelance | 2023 - Present
-- Provide personalized tutoring in Python, Front End (HTML, CSS, JavaScript, jQuery), and Back End (Django, Flask, NodeJS) technologies.
-- Help individuals and groups gain practical coding skills and solve programming challenges.
+Projects:
+1. Hungry Hippo
+   Code: https://github.com/tomdu3/hungry-hippo
+   View Site: https://hungryhippo-tgrams.onrender.com/
+   Description: Food delivery service app with TypeScript, React, PostgreSQL.
 
-Projects
---------
-1. Hungry Hippo – A full-stack web app simulating a food delivery service. Group project.
-  Tech: JS, TypeScript, React, Tailwind, NodeJS, Express.js, PostgreSQL
-  GitHub: https://github.com/chingu-voyages/v50-tier3-team-21
+2. Brain Tumor Detector
+   Code: https://github.com/tomdu3/brain-tumor-detector
+   View Site: https://brain-tumor-detector-e5d30222dbc4.herokuapp.com/
+   Description: Diagnostic ML pipeline using TensorFlow with live dashboard.
 
-2. Books for Life – A platform for book lovers to share their favorite books.
-  Tech: Python, HTML, CSS, JavaScript, Django, Bootstrap, PostgreSQL
-  GitHub: https://github.com/tomdu3/books-for-life
+3. Books for Life
+   Code: https://github.com/tomdu3/books-for-life
+   View Site: https://books-4-life-2d26bdf04dec.herokuapp.com/
+   Description: Book sharing Django app.
 
-3. Brain Tumor Detector – A Streamlit dashboard for MRI-based brain tumor diagnosis.
-  Tech: Python, NumPy, Matplotlib, Seaborn, Plotly, TensorFlow, Scikit-Learn, Streamlit
-  GitHub: https://github.com/tomdu3/brain-tumor-detector
+4. Out and About
+   Code: https://github.com/tomdu3/out-and-about
+   View Site: https://out-and-about-five.vercel.app/
+   Description: Interactive LGBTQ+ historical event timeline on Flask.
 
-4. Out and About – A site sharing LGBTQ+ historical events with an interactive globe.
-  Tech: Python, Flask, PostgreSQL, HTML, CSS, TailwindCSS, JS
-  GitHub: https://github.com/vanderpatrick/Hackteam-6
+5. Smiley Memories
+   Code: https://github.com/tomdu3/smiley-memories
+   View Site: https://tomdu3.github.io/smiley-memories/
+   Description: Memory game using Vanilla JavaScript.
 
-5. Who Wants To Be a Millionaire Kind Of – A Python command-line trivia game.
-  GitHub: https://github.com/tomdu3/millionaire-kindof
+Education:
+1. Data Science Training Program, London School of Informatics (Oct 2023 - Feb 2024).
+2. Full Stack Development Diploma, Code Institute, Dublin (Oct 2022 - Feb 2024).
+3. PhD in Canon Law, Pontifical Lateran University (2010 - 2011).
+4. BSc in Theology, University of Zagreb (1998 - 2003).
 
-6. Smiley’s Memories – A responsive, interactive front-end site for a memory game.
-  Technologies Used: HTML5, CSS3, JS
-  GitHub: https://github.com/tomdu3/smiley-memories
+Additional Info:
+Hobbies: Math, coding, cycling, music.
+Languages: Croatian (Native), English/Italian (Fluent), Beginner in German/French.
 
-Education and Certifications
------------------------------
-- Data Science Training Program
-  London School of Informatics – London, UK | Oct 2023 - Feb 2024
-
-- Diploma in Full Stack Software Development with Specialization in Predictive Analytics
-  Code Institute - Dublin, Ireland | 2022-2024
-  (Credit Rated by University of West of Scotland)
-
-- Additional Courses:
-  - C Programming (Coursera)
-  - Learn JavaScript (Codecademy)
-  - Learn SQL (Codecademy)
-  - Getting Started with Agile (Future Learn)
-  - Harvard’s CS50: Introduction to Computer Science
-  - Introduction to Programming with Python
-
-Additional Work Experience
---------------------------
-Officer in Charge
-Secretariat of State, Vatican | 2019 – 2023
-- Led a statistical team managing global Church data and charity organizations.
-- Supervised annual data publications and the development of an online data platform.
-
-IT Office Lead
-Secretariat of State, Vatican | 2019 – 2021
-- Managed a team responsible for system administration, data management, and user helpdesk.
-
-Editor
-Acta Apostolicae Sedis | 2020 – 2021
-- Edited the official bulletin of the Holy See.
-
-Professor of Canon Law
-Catholic Faculty of Theology, University of Osijek, Croatia | 2017 - 2019
-- Conducted lectures, seminars, and student consultations, and participated in scientific research.
-
-Tribunal Officer
-Matrimonial Tribunal, Catholic Archdiocese of Dakovo-Osijek | 2015 - 2019
-
-Deputy Head of Mission
-Embassy of the Holy See, Islamabad, Pakistan | 2012 - 2015
-
-Education
----------
-- Doctor of Law, Canon Law
-  Pontifical Lateran University, Rome, Italy | 2010 - 2011
-
-- Licentiate Degree, Canon Law
-  University of Marcianum, Venice, Italy, and Pontifical University of the Holy Cross, Rome, Italy | 2007 - 2010
-
-- Bachelor of Theology, Humanities
-  University of Zagreb, Croatia | 1998 - 2003
-
-Interests and Additional Information
-------------------------------------
-- Passionate coder and Linux user, interested in Data Analytics, Machine Learning, and Back End Development.
-- Enjoy education and coding tutoring.
-- Interests: Mathematics, classical music, literature (especially poetry), cycling, and traveling.
-- Language Skills: Native Croatian, Fluent in Italian and English, Beginner in German and French.
