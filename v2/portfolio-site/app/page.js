@@ -271,8 +271,8 @@ export default function Home() {
             <a href='https://millionaire-kindof.herokuapp.com/' className='bento-item'>
               <img src='/img/myimgs/portfolio3.png' alt='Portfolio 3' />
             </a>
-            <a href='https://tomdu3.github.io/smiling-depression' className='bento-item'>
-              <img src='/img/myimgs/portfolio4.png' alt='Portfolio 4' />
+            <a href='https://out-and-about-five.vercel.app/' className='bento-item'>
+              <img src='https://github.com/tomdu3/out-and-about/blob/main/docs/amiresponsive.png?raw=true' alt='Portfolio 4' />
             </a>
             <a href='https://brain-tumor-detector-e5d30222dbc4.herokuapp.com/' className='bento-item'>
               <img src='/img/myimgs/portfolio5.png' alt='Portfolio 5' />
