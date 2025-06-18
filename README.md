@@ -9,3 +9,8 @@
 - [Adrian Twarog: Create a Portfolio Page](https://youtu.be/O3m-OMfYgW8)
 
 - added changes to AI chatbot (April 2025) - using DeepSeek now
+
+## TODO:
+- redesign the website
+- change ai chatbot agent
+- resolve markdown response formatting
